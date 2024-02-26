@@ -1,0 +1,5 @@
+mat <- matrix(1:12, nrow = 3, ncol = 4)
+df <- as.data.frame(mat)
+row.names(df) <- paste0("id-", 1:nrow(df))
+colnames(df) <- paste0("var-", 1:ncol(df))
+print(df)
